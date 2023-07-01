@@ -1,3 +1,5 @@
+package sprint3;
+
 import java.util.Arrays;
 
 public class MergeSort { //the perverted version

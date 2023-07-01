@@ -1,3 +1,5 @@
+package sprint3;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class Flowerbed {
     public static void main(String[] args) throws IOException {
-        var allLines = Files.readAllLines(Path.of("input_flowerbed.txt"));
+        var allLines = Files.readAllLines(Path.of("sprint3/input_flowerbed.txt"));
         allLines.remove(0);
         var pairLst = allLines.stream()
                 .map(s -> {

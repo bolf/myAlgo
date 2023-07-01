@@ -1,10 +1,12 @@
+package sprint3;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Sequence {
     public static void main(String[] args) throws IOException {
-        var allLines = Files.readAllLines(Path.of("input_sequence.txt"));
+        var allLines = Files.readAllLines(Path.of("sprint3/input_sequence.txt"));
         var found = false;
         int j = 0;
         for (int i = 0; i < allLines.get(0).length(); i++) {

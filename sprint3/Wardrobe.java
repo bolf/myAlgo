@@ -1,3 +1,5 @@
+package sprint3;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -5,7 +7,7 @@ import java.util.Arrays;
 
 public class Wardrobe {
     public static void main(String[] args) throws IOException {
-        var allLines = Files.readAllLines(Path.of("input_wardrobe.txt"));
+        var allLines = Files.readAllLines(Path.of("sprint3/input_wardrobe.txt"));
         var arr = Arrays.stream(allLines.get(1).split(" "))
                 .parallel()
                 .filter(s->!s.isBlank())

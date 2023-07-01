@@ -1,3 +1,5 @@
+package sprint3;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -6,7 +8,7 @@ import java.util.Comparator;
 
 public class Perimeter {
     public static void main(String[] args) throws IOException {
-        var allLines = Files.readAllLines(Path.of("input_perimeter.txt"));
+        var allLines = Files.readAllLines(Path.of("sprint3/input_perimeter.txt"));
         Integer[] arr = Arrays.stream(allLines.get(1).split(" "))
                 .map(Integer::valueOf)
                 .sorted(Comparator.reverseOrder())

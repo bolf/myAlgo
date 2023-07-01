@@ -1,3 +1,5 @@
+package sprint3;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class Cookies {
     public static void main(String[] args) throws IOException {
-        var allLines = Files.readAllLines(Path.of("input_cookies.txt"));
+        var allLines = Files.readAllLines(Path.of("sprint3/input_cookies.txt"));
         var childrenLst = Arrays.stream(allLines.get(1).split(" "))
                 .parallel()
                 .map(Integer::parseInt)

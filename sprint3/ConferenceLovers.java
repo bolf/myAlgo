@@ -1,3 +1,5 @@
+package sprint3;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class ConferenceLovers {
     public static void main(String[] args) throws IOException {
-        var allLines = Files.readAllLines(Path.of("input_conference_lovers.txt"));
+        var allLines = Files.readAllLines(Path.of("sprint3/input_conference_lovers.txt"));
         var lim = Integer.parseInt(allLines.get(2));
         var map = Arrays.stream(allLines.get(1).split(" ")).
                 map(Integer::valueOf)
